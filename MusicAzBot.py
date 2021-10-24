@@ -24,7 +24,7 @@ def time_to_seconds(time):
 ## Əmrlər --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    darkprince = f'[👋](https://telegra.ph/file/f9506e875e337c0653c23.jpg) Salam @{message.from_user.username}\n\nMən sizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır.\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\nXəta əmələ gələrsə sahiblə əlaqə yaradın'
+    darkprince = f'[👋](https://telegra.ph/file/cc97cc907aa3e4faa0fbf.jpg) Salam @{message.from_user.username}\n\nMən sizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır.\nMusiqi  yükləmək üçün:\n1) /song (musiqinin adı)\n2) /song (youtubeden birlink)\nXəta əmələ gələrsə sahiblə əlaqə yaradın'
     message.reply_text(
         text=darkprince, 
         quote=False,
