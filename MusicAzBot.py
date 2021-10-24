@@ -12,7 +12,7 @@ import requests
 import time
 #Qurulum
 bot = Client(
-    'MusicAzBot',
+    'RcSongBot',
     bot_token = Config.BOT_TOKEN,
     api_id = Config.API_ID,
     api_hash = Config.API_HASH
@@ -45,7 +45,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Musiqini axtarıram...')
+    m = message.reply('🎧Musiqini Axtariram...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -77,7 +77,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("Musiqini tapdım və endirirəm")
+    m.edit("📢Musiqini Tapmisam Bu Deyqe Yukleyirem")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -91,7 +91,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('Xaiş edirəm bu mesajı sahibimə xəbərdar et!')
+        m.edit('Xaiş edirəm bu mesajı sahibimə xəbərdar ele!')
         print(e)
     try:
         os.remove(audio_file)
