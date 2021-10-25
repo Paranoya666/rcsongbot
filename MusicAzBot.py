@@ -30,7 +30,7 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('👨‍💻Techno 👨‍💻', url='https://t.me/Roxy_Boss'),
+                    InlineKeyboardButton('👨‍💻Techno 👨‍💻', url='https://t.me/rcteamsupport'),
                     InlineKeyboardButton('🤖Support🤖', url='https://t.me/rcteamsupport'),
                     InlineKeyboardButton('Söhbət qrupu👥', url='https://t.me/YzSohbet')
                   ],[
