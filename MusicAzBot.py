@@ -30,9 +30,9 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('👨‍💻Techno 👨‍💻', url='https://t.me/rcteamsupport'),
+                    InlineKeyboardButton('🧑‍💻Sahib', url='https://t.me/Roxy_Boss'),
                     InlineKeyboardButton('🤖Support🤖', url='https://t.me/rcteamsupport'),
-                    InlineKeyboardButton('Söhbət qrupu👥', url='https://t.me/YzSohbet')
+                    InlineKeyboardButton('❤Meni Qrupa Elave Ele❤', url='https://t.me/RcSongBot?startgroup=a')
                   ],[
                     InlineKeyboardButton('Sahib', url='T.me/Roxy_Boss')
                 ]
@@ -77,13 +77,13 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("🎵Musiqini Tapmisam Bu Deyqe Yukleyirem🎵")
+    m.edit("🔹️Musiqini Tapmisam Bu Deyqe Yukleyirem🔘")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎧 **Başlıq**: [{title[:35]}]({link})\n⏳ **Deqiqe**: `{duration}`\n👁‍🗨 **Goruntu sayi**: `{views}`'
+        rep = f'🇦🇿 **Başlıq**: [{title[:35]}]({link})\n⏳ **Deqiqe**: `{duration}`\n👁‍🗨 **Goruntu sayi**: `{views} @piramidasohbet -Sohbet Kanalimiza Qatilmagi Unutma`'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
