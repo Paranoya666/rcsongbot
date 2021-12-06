@@ -1,6 +1,6 @@
 import os
 
 class Config:
-    BOT_TOKEN = "2068263233:AAGnlIg95nbbvU3Kx4pNXcbUy1Ntr21aO4w" # 🌚 get it from @botfather (telegram) by sending /newbot command.
-    API_ID = 4967403 # 🌚 Same as APP_ID. Get it from my.telegram.org.
-    API_HASH = "3290586984b814b9f10d31a83780d1aa" # 🌚 Get it from my.telegram.org.
+    BOT_TOKEN = "@BotFather /newbot  yazaraq alaBilersen" # 🌚 get it from @botfather (telegram) by sending /newbot command.
+    API_ID = "my.telegram.org vasitesi ile" # 🌚 Same as APP_ID. Get it from my.telegram.org.
+    API_HASH = "my.telegram.org vasitesi ile" # 🌚 Get it from my.telegram.org.
